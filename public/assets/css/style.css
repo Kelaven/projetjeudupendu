@@ -1,0 +1,54 @@
+/*! place box */
+#elements{
+    background-color: bisque;
+    height: 600px;
+    width: 100vw;
+}
+#hangman{
+    background-color: blue;
+    height: 300px;
+    width: 30%;
+}
+#word-keyboard-container{
+    background-color: red;
+    height: 300px;
+    width: 50%;
+}
+    #word{
+        background-color: blueviolet;
+        height: 140px;
+    }
+    #keyboard{
+        background-color: pink;
+        height: 140px;
+    }
+#result{
+    background-color: green;
+    height: 300px;
+    width: 20%;
+}
+
+/*! keyboard  */
+span{
+    font-size: 30px;
+}
+.usedColor{
+    background-color: grey;
+}
+
+
+
+.div4{
+    background-image: yellow;
+}
+
+
+
+
+hr{
+    width: 40px;
+    border-top: 10px solid black;
+}
+.divforletter, divforletter5{
+    width: 50px;
+}

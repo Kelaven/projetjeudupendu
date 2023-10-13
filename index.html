@@ -9,7 +9,92 @@
     <!-- my style -->
     <link rel="stylesheet" href="./public/assets/css/style.css">
 </head>
+
 <body>
+<!-- title page container -->
+<div class="container">
+    <div class="row text-center">
+        <div class="col">
+            <h1>Jeu du pendu</h1>
+        </div>
+    </div>
+</div>
+<!-- main elements container -->
+<div class="container-fluid d-flex flex-wrap align-items-center" id="elements">
+
+    <!-- hangman image -->
+    <div class="container" id="hangman">
+        <div class="row">
+            <div class="col">
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <!-- word and kayboard elements container -->
+    <div class="container" id="word-keyboard-container">
+        <!-- word -->
+        <div class="row">
+            <div class="col p-1">
+                <div id="word" class="d-flex">
+                    <div class="divforletter d-none"><hr></div>
+                    <div class="divforletter d-none"><hr></div>
+                    <div class="divforletter d-none"><hr></div>
+                    <div class="divforletter d-none"><hr></div>
+                    <div class="divforletter5 d-none"></div>
+
+                </div>
+            </div>
+        </div>
+        <!-- keyboard -->
+        <div class="row">
+            <div class="col p-1">
+                <div id="keyboard">
+                    <div>
+                        <div class="touch">A</div>
+                        <div class="touch">Z</div>
+                        <div class="touch">E</div>
+                        <div class="touch">R</div>
+                        <div class="touch">T</div>
+                        <div class="touch">Y</div>
+                        <div class="touch">U</div>
+                        <div class="touch">I</div>
+                        <div class="touch">O</div>
+                        <div class="touch">P</div>
+                    </div>
+                    <div>
+                        <div class="touch">Q</div>
+                        <div class="touch">S</div>
+                        <div class="touch">D</div>
+                        <div class="touch">F</div>
+                        <div class="touch">G</div>
+                        <div class="touch">H</div>
+                        <div class="touch">J</div>
+                        <div class="touch">K</div>
+                        <div class="touch">L</div>
+                        <div class="touch">M</div>
+                    </div>
+                    <div>
+                        <div class="touch">W</div>
+                        <div class="touch">X</div>
+                        <div class="touch">C</div>
+                        <div class="touch">V</div>
+                        <div class="touch">B</div>
+                        <div class="touch">N</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- result container -->
+    <div class="container" id="result">
+        <div class="col">
+
+        </div>
+    </div>
+
+</div>
+
+
     <!-- bootstrap script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!-- my script -->
