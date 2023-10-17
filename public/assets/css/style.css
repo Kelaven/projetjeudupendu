@@ -1,121 +1,122 @@
 /* ! Global settings */
-body{
-    /* background-image: url("../img/pixel-art-wallpaper-hangman-western-0.jpg"); 
-    background-repeat: no-repeat;
-    background-size: cover; */
+h1, h2, p, a, .touch{
+    font-family: 'VT323', monospace;
 }
 
+/* ! Title */
+h1{
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 80px;
+    font-weight: bolder;
+}
 
 /*! place box */
 #elements{
-    background-color: bisque;
+    /* background-color: bisque; */
     height: 600px;
     width: 100vw;
 }
 #hangman{
     /* background-color: blue; */
     height: 300px;
-    width: 30%;
+    width: 40%;
 }
 #word-keyboard-container{
-    background-color: red;
-    height: 300px;
-    width: 50%;
+    /* background-color: red; */
+    height: 400px;
+    width: 40%;
 }
     #word{
-        background-color: blueviolet;
+        /* background-color: blueviolet; */
         height: 140px;
     }
     #keyboard{
-        background-color: pink;
-        height: 140px;
+        /* background-color: pink; */
+        height: 300px;
     }
 #result{
-    background-color: green;
+    /* background-color: green; */
     height: 300px;
     width: 20%;
 }
 
 /*! keyboard  */
-span{
-    font-size: 30px;
-}
 .usedColor{
-    background-color: grey;
+    background-color: #48475E;
 }
-
-
-
-.div4{
-    background-image: yellow;
+p{
+    font-size: 50px;
 }
-
-
-
-
-hr{
-    width: 40px;
-    border-top: 10px solid black;
-}
-.divforletter, divforletter5{
-    width: 50px;
-}
-
-
-
-
-
-
-/* ! play img */
-
-#play-img{
-    height: 100vh;
-    background-color: orange;
+button{
+    padding: 5px 22px;
+    font-size: 30px;
+    background-color: #ff6621;
+    border: 2px solid #000000;
+    border-radius: 2px;
 }
 
 /* ! win div */
-
 #win-div{
-    height: 100vh;
-    width: 50vw;
+    height: 16vh;
+    width: 15vw;
     background-color: green;
-    opacity: 0.8;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    border: 3px solid #000000;
+    border-style: outset;
+}
+#win-text-button{
+    color: black;
+    text-decoration: none;
+    font-size: 50px;
+}
+#win-replay-btn{
+    border: none;
+    background-color: rgba(255, 0, 0, 0);
 }
 
 /* ! lose div */
-
+#lose-div__background{
+    background-color: rgba(255, 0, 0, 0.5);
+    height: 500px;
+    width: 900px;
+    right: 50%;
+    top: 20px;
+    transform: translateX(50%);
+}
 #lose-div{
-    height: 100vh;
-    width: 50vw;
+    height: 16vh;
+    width: 15vw;
     background-color: red;
-    opacity: 0.8;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-
+    border: 3px solid #000000;
+    border-style: outset;
 }
-#replay-btn{
-    opacity: 1;
+#lose-text-button{
+    color: black;
+    text-decoration: none;
+    font-size: 50px;
 }
-
-/* ! score style */
-
-h2{
-    font-size: 20px;
+#lose-replay-btn{
+    border: none;
+    background-color: rgba(255, 0, 0, 1);
 }
-
 
 /* ! hangman image */
-
 #background-img{ 
     position: fixed;
     z-index: -12;
 }
-
 #background-img-to-modify{
     height: 100vh;
     width: 100%;
 }
+
+/* ? score style */
+/* h2{
+    font-size: 20px;
+} */

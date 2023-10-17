@@ -8,66 +8,30 @@
     <link rel="stylesheet" href="./public/assets/framework/bootstrap.min.css">
     <!-- my style -->
     <link rel="stylesheet" href="./public/assets/css/style.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- ! image d'arrière plan -->
+<!-- ! image d'arrière plan -->
 <div id="background-img"><img id="background-img-to-modify" src="./public/assets/img/pixel-art-wallpaper-hangman-western-0.jpg" alt=""></div>
 
-<!-- win div -->
-<div class="d-none container-fluid z-1 position-absolute d-flex justify-content-center align-items-center" id="win-div">
-    <button id="replay-btn"><a href="./index.html" id="refresh-page">Rejouer</a> </button>
-</div>
-
-<!-- lose div -->
-<div class="container-fluid z-1 d-none position-absolute d-flex justify-content-center align-items-center" id="lose-div">
-    <!-- <button id="replay-btn">Rejouer</button> -->
-    <button id="replay-btn"><a href="./index.html" id="refresh-page">Rejouer</a> </button>
-</div>
-
-
-
-<!-- title page container -->
+<!-- ! title page container -->
 <div class="container">
     <div class="row text-center">
-        <div class="col">
-            <h1>Jeu du pendu</h1>
+        <div class="col justify-content-center pt-4 mt-2">
+            <h1>Le Bandit du Far West</h1>
         </div>
     </div>
 </div>
-<!-- main elements container -->
+<!-- ! main elements container -->
 <div class="container container-fluid d-flex flex-wrap align-items-center z-0 position-relative" id="elements">
-
-
-
-
-
     <!-- hangman image -->
     <div class="container" id="hangman">
         <div class="row">
             <div class="col">
-                <!-- <div class="d-none hangman-part-1 z-1">
-                    <img src="./public/assets/img/hangman1.png" alt="hangman-part-1" class="hangman-size">
-                </div>
-                <div class="d-none hangman-part-2">
-                    <img src="./public/assets/img/hangman2.png" alt="hangman-part-2" class="hangman-size">
-                </div>
-                <div class="d-none hangman-part-3">
-                    <img src="./public/assets/img/hangman3.png" alt="hangman-part-3" class="hangman-size">
-                </div>
-                <div class="d-none hangman-part-4">
-                    <img src="./public/assets/img/hangman4.png" alt="hangman-part-4" class="hangman-size">                    
-                </div>
-                <div class="d-none hangman-part-5">
-                    <img src="./public/assets/img/hangman5.png" alt="hangman-part-5" class="hangman-size">
-                </div>
-                <div class="d-none hangman-part-6">
-                    <img src="./public/assets/img/hangman6.png" alt="hangman-part-6" class="hangman-size">
-                </div>
-                <div class="d-none hangman-part-7">
-                    <img src="./public/assets/img/hangman7.png" alt="hangman-part-7" class="hangman-size">
-                </div> -->
+                
             </div>
         </div>
     </div>
@@ -75,71 +39,67 @@
     <div class="container" id="word-keyboard-container">
         <!-- word -->
         <div class="row">
-            <div class="col p-1">
-                <div id="word" class="">
-
+            <div class="col p-1 d-flex justify-content-center align-items-center pt-4">
+                <div id="word" class="d-flex align-items-center">
                 </div>
             </div>
         </div>
         <!-- keyboard -->
         <div class="row">
             <div class="col p-1">
-                <div id="keyboard">
-                    <div>
-                        <!-- <div class="touch" id="touchA">A</div> -->
-                        <button class="touch">A</button>
-                        <div class="touch">Z</div>
-                        <div class="touch">E</div>
-                        <div class="touch">R</div>
-                        <div class="touch">T</div>
-                        <div class="touch">Y</div>
-                        <div class="touch">U</div>
-                        <div class="touch">I</div>
-                        <div class="touch">O</div>
-                        <div class="touch">P</div>
-                    </div>
-                    <div>
-                        <div class="touch">Q</div>
-                        <div class="touch">S</div>
-                        <div class="touch">D</div>
-                        <div class="touch">F</div>
-                        <div class="touch">G</div>
-                        <div class="touch">H</div>
-                        <div class="touch">J</div>
-                        <div class="touch">K</div>
-                        <div class="touch">L</div>
-                        <div class="touch">M</div>
-                    </div>
-                    <div>
-                        <div class="touch">W</div>
-                        <div class="touch">X</div>
-                        <div class="touch">C</div>
-                        <div class="touch">V</div>
-                        <div class="touch">B</div>
-                        <div class="touch">N</div>
+                <div id="keyboard" class="">
+                    <div id="keyboard-container" class="d-flex flex-wrap justify-content-center">
+                        <!-- lose div -->
+                        <div class="container-fluid z-1 d-none position-absolute d-flex justify-content-center align-items-center" id="lose-div">
+                            <!-- <button id="replay-btn">Rejouer</button> -->
+                            <button id="lose-replay-btn"><a href="./index.html" id="lose-text-button">Rejouer</a> </button>
+                        </div>
+                        <!-- win div -->
+                        <div class="d-none container-fluid z-1 position-absolute d-flex justify-content-center align-items-center" id="win-div">
+                            <button id="win-replay-btn"><a href="./index.html" id="win-text-button">Rejouer</a> </button>
+                        </div>
+                        <!-- touches -->
+                        <button class="touch m-1">A</button>
+                        <button class="touch m-1">B</button>
+                        <button class="touch m-1">C</button>
+                        <button class="touch m-1">D</button>
+                        <button class="touch m-1">E</button>
+                        <button class="touch m-1">F</button>
+                        <button class="touch m-1">G</button>
+                        <button class="touch m-1">H</button>
+                        <button class="touch m-1">I</button>
+                        <button class="touch m-1">J</button>
+                        <button class="touch m-1">K</button>
+                        <button class="touch m-1">L</button>
+                        <button class="touch m-1">M</button>
+                        <button class="touch m-1">N</button>
+                        <button class="touch m-1">O</button>
+                        <button class="touch m-1">P</button>
+                        <button class="touch m-1">Q</button>
+                        <button class="touch m-1">R</button>
+                        <button class="touch m-1">S</button>
+                        <button class="touch m-1">T</button>
+                        <button class="touch m-1">U</button>
+                        <button class="touch m-1">V</button>
+                        <button class="touch m-1">W</button>
+                        <button class="touch m-1">X</button>
+                        <button class="touch m-1">Y</button>
+                        <button class="touch m-1">Z</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- result container -->
+    <!-- ? result container -->
     <div class="container" id="result">
         <div class="col">
-            <h2>Nombre de parties jouées :</h2>
+            <!-- <h2>Nombre de parties jouées :</h2>
             <h2>Nombre de victoires :</h2>
             <h2>Nombre de défaites :</h2>
-            <h2>Ratio :</h2>
+            <h2>Ratio :</h2> -->
         </div>
     </div>
-
 </div>
-
-
-
-
-
-</div>
-
 
     <!-- bootstrap script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

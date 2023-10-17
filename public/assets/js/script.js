@@ -1,7 +1,8 @@
 // *************** Tirer un mot au hasard à la fois sous forme de lettres et sous forme d'underscores *************** //
 // ! Variables : 
 // créer un tableau pour centraliser les mots
-const words = ["BARBE", "CERF", "LOURD", "POUMON", "TOMATE", "JOURNAL", "POTERIE", "BANQUISE", "TOURISME", "GRAPHIQUE"];
+const words = ["CACTUS", "CHARRIOT", "PISTOLET", "RODEO", "GIBET", "TIRAILLEUR", "VIREVOLTANT", "SELLE", "BANDITISME", "DILIGENCE", "BRACONNAGE"];
+
 console.log(words);
 // * je stocke la fonction qui sert à obtenir un mot aléatoire dans une variable :
 const wordToFind = getWord();
@@ -49,14 +50,6 @@ const chosenLetters = document.querySelectorAll(".touch");
 // comptabiliser le nombre d'erreurs de l'utiliasteur :
 let counter = 0;
 let counterMax = 7;
-// sélectionner les div qui contiennent l'image du pendu :
-const hangmanImage1 = document.querySelector(".hangman-part-1");
-const hangmanImage2 = document.querySelector(".hangman-part-2");
-const hangmanImage3 = document.querySelector(".hangman-part-3");
-const hangmanImage4 = document.querySelector(".hangman-part-4");
-const hangmanImage5 = document.querySelector(".hangman-part-5");
-const hangmanImage6 = document.querySelector(".hangman-part-6");
-const hangmanImage7 = document.querySelector(".hangman-part-7");
 // sélectionner l'écran de win ou de lose : 
 const winScreen = document.getElementById("win-div");
 const loseScreen = document.getElementById("lose-div");
@@ -104,10 +97,6 @@ chosenLetters.forEach(chosenLetter => {
                         } else if (counter == 7){
                             backgroundHangman.setAttribute("src", "./public/assets/img/pixel-art-wallpaper-hangman-western-7.jpg")
                             loseScreen.classList.remove("d-none");
-                            
-                            replayBtn.addEventListener("click", () => {
-                                loseScreen.classList.add("d-none");
-                            });
                         };
                 };
         };
