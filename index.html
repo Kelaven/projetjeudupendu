@@ -11,6 +11,20 @@
 </head>
 
 <body>
+
+<!-- win div -->
+<div class="d-none container-fluid z-1 position-absolute d-flex justify-content-center align-items-center" id="win-div">
+    <button id="replay-btn"><a href="./index.html" id="refresh-page">Rejouer</a> </button>
+</div>
+
+<!-- lose div -->
+<div class="container-fluid z-1 d-none position-absolute d-flex justify-content-center align-items-center" id="lose-div">
+    <!-- <button id="replay-btn">Rejouer</button> -->
+    <button id="replay-btn"><a href="./index.html" id="refresh-page">Rejouer</a> </button>
+</div>
+
+
+
 <!-- title page container -->
 <div class="container">
     <div class="row text-center">
@@ -20,13 +34,37 @@
     </div>
 </div>
 <!-- main elements container -->
-<div class="container container-fluid d-flex flex-wrap align-items-center" id="elements">
+<div class="container container-fluid d-flex flex-wrap align-items-center z-0 position-relative" id="elements">
+
+
+
+
 
     <!-- hangman image -->
     <div class="container" id="hangman">
         <div class="row">
             <div class="col">
-                <div></div>
+                <div class="d-none hangman-part-1 z-1">
+                    <img src="./public/assets/img/hangman1.png" alt="hangman-part-1" class="hangman-size">
+                </div>
+                <div class="d-none hangman-part-2">
+                    <img src="./public/assets/img/hangman2.png" alt="hangman-part-2" class="hangman-size">
+                </div>
+                <div class="d-none hangman-part-3">
+                    <img src="./public/assets/img/hangman3.png" alt="hangman-part-3" class="hangman-size">
+                </div>
+                <div class="d-none hangman-part-4">
+                    <img src="./public/assets/img/hangman4.png" alt="hangman-part-4" class="hangman-size">                    
+                </div>
+                <div class="d-none hangman-part-5">
+                    <img src="./public/assets/img/hangman5.png" alt="hangman-part-5" class="hangman-size">
+                </div>
+                <div class="d-none hangman-part-6">
+                    <img src="./public/assets/img/hangman6.png" alt="hangman-part-6" class="hangman-size">
+                </div>
+                <div class="d-none hangman-part-7">
+                    <img src="./public/assets/img/hangman7.png" alt="hangman-part-7" class="hangman-size">
+                </div>
             </div>
         </div>
     </div>
@@ -84,11 +122,21 @@
     <!-- result container -->
     <div class="container" id="result">
         <div class="col">
-
+            <h2>Nombre de parties jouées :</h2>
+            <h2>Nombre de victoires :</h2>
+            <h2>Nombre de défaites :</h2>
+            <h2>Ratio :</h2>
         </div>
     </div>
 
 </div>
+
+
+
+
+
+</div>
+
 
 
     <!-- bootstrap script -->
