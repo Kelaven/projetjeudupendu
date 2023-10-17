@@ -62,6 +62,8 @@ const winScreen = document.getElementById("win-div");
 const loseScreen = document.getElementById("lose-div");
 // sélectionner le bouton rejouer :
 const replayBtn = document.getElementById("replay-btn");
+// sélectionner l'image d'arrière plan à modifier pour la potence : 
+let backgroundHangman = document.getElementById("background-img-to-modify");
 
 // ! Fonction
 // Pour chaque touche sélectionnée, je vais lancer un évènement au click :
@@ -88,41 +90,21 @@ chosenLetters.forEach(chosenLetter => {
                     counter ++
                         // pour chaque déclenchement d'incrémentation j'affiche une image : 
                         if (counter == 1) {
-                            hangmanImage1.classList.remove("d-none");
+                            backgroundHangman.setAttribute("src", "./public/assets/img/pixel-art-wallpaper-hangman-western-1.jpg")
                         } else if (counter == 2){
-                            hangmanImage2.classList.remove("d-none");
-                            hangmanImage1.classList.add("d-none");
+                            backgroundHangman.setAttribute("src", "./public/assets/img/pixel-art-wallpaper-hangman-western-2.jpg")
                         } else if (counter == 3){
-                            hangmanImage3.classList.remove("d-none");
-                            hangmanImage1.classList.add("d-none");
-                            hangmanImage2.classList.add("d-none");
+                            backgroundHangman.setAttribute("src", "./public/assets/img/pixel-art-wallpaper-hangman-western-3.jpg")
                         } else if (counter == 4){
-                            hangmanImage4.classList.remove("d-none");
-                            hangmanImage1.classList.add("d-none");
-                            hangmanImage2.classList.add("d-none");
-                            hangmanImage3.classList.add("d-none");
+                            backgroundHangman.setAttribute("src", "./public/assets/img/pixel-art-wallpaper-hangman-western-4.jpg")
                         } else if (counter == 5){
-                            hangmanImage5.classList.remove("d-none");
-                            hangmanImage1.classList.add("d-none");
-                            hangmanImage2.classList.add("d-none");
-                            hangmanImage3.classList.add("d-none");
-                            hangmanImage4.classList.add("d-none");
+                            backgroundHangman.setAttribute("src", "./public/assets/img/pixel-art-wallpaper-hangman-western-5.jpg")
                         }else if (counter == 6){
-                            hangmanImage6.classList.remove("d-none");
-                            hangmanImage1.classList.add("d-none");
-                            hangmanImage2.classList.add("d-none");
-                            hangmanImage3.classList.add("d-none");
-                            hangmanImage4.classList.add("d-none");
-                            hangmanImage5.classList.add("d-none");
+                            backgroundHangman.setAttribute("src", "./public/assets/img/pixel-art-wallpaper-hangman-western-6.jpg")
                         } else if (counter == 7){
-                            hangmanImage7.classList.remove("d-none");
-                            hangmanImage1.classList.add("d-none");
-                            hangmanImage2.classList.add("d-none");
-                            hangmanImage3.classList.add("d-none");
-                            hangmanImage4.classList.add("d-none");
-                            hangmanImage5.classList.add("d-none");
-                            hangmanImage6.classList.add("d-none");
+                            backgroundHangman.setAttribute("src", "./public/assets/img/pixel-art-wallpaper-hangman-western-7.jpg")
                             loseScreen.classList.remove("d-none");
+                            
                             replayBtn.addEventListener("click", () => {
                                 loseScreen.classList.add("d-none");
                             });

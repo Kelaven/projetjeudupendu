@@ -1,14 +1,14 @@
 /* ! Global settings */
 body{
-    background-image: url("../img/pixel-art-wallpaper-hangman-western-0.jpg");
+    /* background-image: url("../img/pixel-art-wallpaper-hangman-western-0.jpg"); 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
 
 
 /*! place box */
 #elements{
-    /* background-color: bisque; */
+    background-color: bisque;
     height: 600px;
     width: 100vw;
 }
@@ -18,20 +18,20 @@ body{
     width: 30%;
 }
 #word-keyboard-container{
-    /* background-color: red; */
+    background-color: red;
     height: 300px;
     width: 50%;
 }
     #word{
-        /* background-color: blueviolet; */
+        background-color: blueviolet;
         height: 140px;
     }
     #keyboard{
-        /* background-color: pink; */
+        background-color: pink;
         height: 140px;
     }
 #result{
-    /* background-color: green; */
+    background-color: green;
     height: 300px;
     width: 20%;
 }
@@ -110,21 +110,12 @@ h2{
 
 /* ! hangman image */
 
-.hangman-size{
-    height: 200px;
-    width: 200px;
+#background-img{ 
+    position: fixed;
+    z-index: -12;
 }
 
-.hangman-part-1{
-    /* background-image: url("../img/pixel-art-wallpaper-hangman-western-1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; */
-} 
-
-#test{
-    /* background-image: url("../img/pixel-art-wallpaper-hangman-western-1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+#background-img-to-modify{
     height: 100vh;
-    width: 100vw; */
+    width: 100%;
 }
