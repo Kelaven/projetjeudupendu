@@ -1,10 +1,14 @@
 /* ! Global settings */
-h1, h2, p, a, .touch{
+h1,
+h2,
+p,
+a,
+.touch {
     font-family: 'VT323', monospace;
 }
 
 /* ! Title */
-h1{
+h1 {
     text-transform: uppercase;
     font-style: italic;
     font-size: 80px;
@@ -12,43 +16,50 @@ h1{
 }
 
 /*! place box */
-#elements{
+#elements {
     /* background-color: bisque; */
     height: 600px;
     width: 100vw;
 }
-#hangman{
+
+#hangman {
     /* background-color: blue; */
     height: 300px;
     width: 40%;
 }
-#word-keyboard-container{
+
+#word-keyboard-container {
     /* background-color: red; */
     height: 400px;
     width: 40%;
 }
-    #word{
-        /* background-color: blueviolet; */
-        height: 140px;
-    }
-    #keyboard{
-        /* background-color: pink; */
-        height: 300px;
-    }
-#result{
+
+#word {
+    /* background-color: blueviolet; */
+    height: 140px;
+}
+
+#keyboard {
+    /* background-color: pink; */
+    height: 300px;
+}
+
+#result {
     /* background-color: green; */
     height: 300px;
     width: 20%;
 }
 
 /*! keyboard  */
-.usedColor{
+.usedColor {
     background-color: #48475E;
 }
-p{
+
+p {
     font-size: 50px;
 }
-button{
+
+button {
     padding: 5px 22px;
     font-size: 30px;
     background-color: #ff6621;
@@ -57,7 +68,7 @@ button{
 }
 
 /* ! win div */
-#win-div{
+#win-div {
     height: 16vh;
     width: 15vw;
     background-color: green;
@@ -67,18 +78,20 @@ button{
     border: 3px solid #000000;
     border-style: outset;
 }
-#win-text-button{
+
+#win-text-button {
     color: black;
     text-decoration: none;
     font-size: 50px;
 }
-#win-replay-btn{
+
+#win-replay-btn {
     border: none;
     background-color: rgba(255, 0, 0, 0);
 }
 
 /* ! lose div */
-#lose-div__background{
+#lose-div__background {
     background-color: rgba(255, 0, 0, 0.5);
     height: 500px;
     width: 900px;
@@ -86,7 +99,8 @@ button{
     top: 20px;
     transform: translateX(50%);
 }
-#lose-div{
+
+#lose-div {
     height: 16vh;
     width: 15vw;
     background-color: red;
@@ -96,27 +110,142 @@ button{
     border: 3px solid #000000;
     border-style: outset;
 }
-#lose-text-button{
+
+#lose-text-button {
     color: black;
     text-decoration: none;
     font-size: 50px;
 }
-#lose-replay-btn{
+
+#lose-replay-btn {
     border: none;
     background-color: rgba(255, 0, 0, 1);
 }
 
 /* ! hangman image */
-#background-img{ 
+#background-img {
     position: fixed;
     z-index: -12;
 }
-#background-img-to-modify{
+
+#background-img-to-modify {
     height: 100vh;
     width: 100vw;
+    object-fit: cover;
 }
 
 /* ? score style */
 /* h2{
     font-size: 20px;
 } */
+
+/* ! media queries */
+@media (max-width: 768px) {
+
+    body {
+        background-color: #F4F1CB;
+    }
+
+    h1 {
+        font-size: 11vw;
+    }
+
+    #elements {
+        height: auto;
+    }
+
+    #keyboard-container {
+        max-width: 100vw;
+        padding-top: 20px;
+    }
+
+    #word-keyboard-container {
+        /* max-height: 100vh; */
+        width: 100%;
+    }
+
+    #keyboard-container button {
+        /* font-size: 10px; */
+        padding: 2px 15px;
+    }
+
+    #word {
+        height: 0px;
+    }
+
+    #word p {
+        font-size: 10vw;
+        padding-bottom: 30px;
+        padding-top: 40px;
+    }
+
+    #hangman {
+        height: 45vh;
+    }
+
+    #background-img-to-modify {
+        height: 60vh;
+        width: 210vw;
+        /* width: 100vw; */
+        object-fit: repeat;
+    }
+
+    #lose-div,
+    #win-div {
+        width: 80%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    body {
+        background-color: #F4F1CB;
+    }
+
+    h1 {
+        font-size: 8vw;
+    }
+
+    #elements {
+        height: auto;
+    }
+
+    #keyboard-container {
+        max-width: 100vw;
+        padding-top: 20px;
+    }
+
+    #word-keyboard-container {
+        /* max-height: 100vh; */
+        width: 100%;
+    }
+
+    #keyboard-container button {
+        /* font-size: 10px; */
+        padding: 10px 25px;
+    }
+
+    #word {
+        height: 15vh;
+    }
+
+    #word p {
+        font-size: 6vw;
+        padding-top: 120px;
+    }
+
+    #hangman {
+        height: 45vh;
+    }
+
+    #background-img-to-modify {
+        height: 70vh;
+        width: 210vw;
+        /* width: 100vw; */
+        /* object-fit: repeat; */
+    }
+
+    #lose-div,
+    #win-div {
+        width: 50%;
+    }
+}
